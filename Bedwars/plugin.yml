@@ -1,0 +1,9 @@
+name: Bedwars
+version 1.0
+author: Tempoo50
+main: de.bedwars.main.Bedwars
+
+commands:
+   Spawner:
+   Bedwars:
+   setranking:
