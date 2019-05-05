@@ -1,7 +1,7 @@
 package de.bedwars.listeners;
 
 import org.bukkit.Material;
-import org.bukkit.entity.Creature;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -18,7 +18,7 @@ public class NatureHandler implements Listener{
 	public void onCreatureSpawn(CreatureSpawnEvent e){
 		
 		
-		if(e.getCreatureType().equals(CreatureType.VILLAGER)){
+		if(e.getEntity().equals(EntityType.VILLAGER)){
 			e.setCancelled(false);
 		}else{
 			e.setCancelled(true);

@@ -26,21 +26,21 @@ public class TeamListener implements Listener{
 			if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§9Blaues Team")){
 				e.setCancelled(true);
 				
-				if(pl.blau.size() == 0){
+				if(Bedwars.blau.size() == 0){
 					
 
 						Methods.ClearFromArray(p);
-						pl.blau.add(p.getName());
-						p.sendMessage(pl.pr+"Du bist nun in Team §9Blau"+pl.n+"!");
+						Bedwars.blau.add(p.getName());
+						p.sendMessage(Bedwars.pr+"Du bist nun in Team §9Blau"+Bedwars.n+"!");
 					
 					
-				}else if(pl.blau.size() >= 1){
+				}else if(Bedwars.blau.size() >= 1){
 					if(Bukkit.getOnlinePlayers().size() >= 8){
 						Methods.ClearFromArray(p);
-						pl.blau.add(p.getName());
-						p.sendMessage(pl.pr+"Du bist nun in Team §9Blau"+pl.n+"!");
+						Bedwars.blau.add(p.getName());
+						p.sendMessage(Bedwars.pr+"Du bist nun in Team §9Blau"+Bedwars.n+"!");
 					}else{
-						p.sendMessage(pl.pr+"Dieses Team ist momentan Voll!");
+						p.sendMessage(Bedwars.pr+"Dieses Team ist momentan Voll!");
 					}
 				}else{
 					
@@ -48,65 +48,65 @@ public class TeamListener implements Listener{
 				
 			}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§4Rotes Team")){
 				e.setCancelled(true);
-				if(pl.rot.size() == 0){
+				if(Bedwars.rot.size() == 0){
 					
 
 						Methods.ClearFromArray(p);
-						pl.rot.add(p.getName());
-						p.sendMessage(pl.pr+"Du bist nun in Team §4Rot"+pl.n+"!");
+						Bedwars.rot.add(p.getName());
+						p.sendMessage(Bedwars.pr+"Du bist nun in Team §4Rot"+Bedwars.n+"!");
 						
 
 					
-				}else if(pl.rot.size() >= 1){
+				}else if(Bedwars.rot.size() >= 1){
 					if(Bukkit.getOnlinePlayers().size() >= 8){
 						Methods.ClearFromArray(p);
-						pl.rot.add(p.getName());
-						p.sendMessage(pl.pr+"Du bist nun in Team §4Rot"+pl.n+"!");
+						Bedwars.rot.add(p.getName());
+						p.sendMessage(Bedwars.pr+"Du bist nun in Team §4Rot"+Bedwars.n+"!");
 					}else{
-						p.sendMessage(pl.pr+"Dieses Team ist momentan Voll!");
+						p.sendMessage(Bedwars.pr+"Dieses Team ist momentan Voll!");
 					}
 				}else{
 					
 				}
 			}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§eGelbes Team")){
 				e.setCancelled(true);
-				if(pl.gelb.size() == 0){
+				if(Bedwars.gelb.size() == 0){
 					
 
 						Methods.ClearFromArray(p);
-						pl.gelb.add(p.getName());
-						p.sendMessage(pl.pr+"Du bist nun in Team §eGelb"+pl.n+"!");
+						Bedwars.gelb.add(p.getName());
+						p.sendMessage(Bedwars.pr+"Du bist nun in Team §eGelb"+Bedwars.n+"!");
 
 					
-				}else if(pl.gelb.size() >= 1){
+				}else if(Bedwars.gelb.size() >= 1){
 					if(Bukkit.getOnlinePlayers().size() >= 8){
 						Methods.ClearFromArray(p);
-						pl.gelb.add(p.getName());
-						p.sendMessage(pl.pr+"Du bist nun in Team §eGelb"+pl.n+"!");
+						Bedwars.gelb.add(p.getName());
+						p.sendMessage(Bedwars.pr+"Du bist nun in Team §eGelb"+Bedwars.n+"!");
 					}else{
-						p.sendMessage(pl.pr+"Dieses Team ist momentan Voll!");
+						p.sendMessage(Bedwars.pr+"Dieses Team ist momentan Voll!");
 					}
 				}else{
 					
 				}
 			}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§5Lilanes Team")){
 				e.setCancelled(true);
-				if(pl.Lila.size() == 0){
+				if(Bedwars.Lila.size() == 0){
 					
 
 						Methods.ClearFromArray(p);
-						pl.Lila.add(p.getName());
-						p.sendMessage(pl.pr+"Du bist nun in Team §5Lila"+pl.n+"!");
+						Bedwars.Lila.add(p.getName());
+						p.sendMessage(Bedwars.pr+"Du bist nun in Team §5Lila"+Bedwars.n+"!");
 						
 
 					
-				}else if(pl.Lila.size() >= 1){
+				}else if(Bedwars.Lila.size() >= 1){
 					if(Bukkit.getOnlinePlayers().size() >= 8){
 						Methods.ClearFromArray(p);
-						pl.Lila.add(p.getName());
-						p.sendMessage(pl.pr+"Du bist nun in Team §5Lila"+pl.n+"!");
+						Bedwars.Lila.add(p.getName());
+						p.sendMessage(Bedwars.pr+"Du bist nun in Team §5Lila"+Bedwars.n+"!");
 					}else{
-						p.sendMessage(pl.pr+"Dieses Team ist momentan Voll!");
+						p.sendMessage(Bedwars.pr+"Dieses Team ist momentan Voll!");
 					}
 				}else{
 					
@@ -125,4 +125,3 @@ public class TeamListener implements Listener{
 	
 	
 }
-

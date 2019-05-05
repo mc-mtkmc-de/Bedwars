@@ -9,17 +9,19 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 
-
+import de.bedwars.utils.GameManager;
 import de.bedwars.utils.MapReseter;
-
 import de.bedwars.api.LocationApi;
 import de.bedwars.main.Bedwars;
 import de.bedwars.mysql.SQLStats;
-import de.bedwars.utils.GameManager;
 
 public class BlockHandler implements Listener {
 
-
+	/*
+	 * ToDo:
+	 *  - Mapreseter einbauen!
+	 * 
+	 */
 	
 	
 	@EventHandler
@@ -159,4 +161,3 @@ public class BlockHandler implements Listener {
 	
 	
 }
-

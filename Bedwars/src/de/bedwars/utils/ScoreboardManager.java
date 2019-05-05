@@ -77,11 +77,11 @@ public class ScoreboardManager {
 		}else if(GameManager.isState(GameManager.LOBBY)){
 			
 
-			o.getScore("ง3Map:").setScore(10);
-			o.getScore("ง7งe<Map>").setScore(9);
+			o.getScore("ยง3Map:").setScore(10);
+			o.getScore("ยง7โฅ ยงe<Map>").setScore(9);
 			o.getScore("    ").setScore(8);
-			o.getScore("ง7Bedwars").setScore(7);
-			o.getScore("ง7งe<ServerName/IP>").setScore(6);
+			o.getScore("ยง7Bedwars").setScore(7);
+			o.getScore("ยง7โฅ ยงe<ServerName/IP>").setScore(6);
 				
 				
 			p.setScoreboard(s);

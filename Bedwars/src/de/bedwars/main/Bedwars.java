@@ -94,19 +94,19 @@ public class Bedwars extends JavaPlugin{
 		this.getServer().getPluginManager().registerEvents(new DeathHandler(), this);
 		this.getServer().getPluginManager().registerEvents(new DamageHandler(), this);
 		this.getCommand("Spawner").setExecutor(new Spawner());
-		this.getCommand("Bedwars").setExecutor(new BW());
+		this.getCommand("Bw").setExecutor(new BW());
 		this.getCommand("setranking").setExecutor(new SetRanking());
 		CD();
 		ShopManager.MainInv = Bukkit.createInventory(null, 27, "§3§lShop");
-		ShopManager.BogenInv = Bukkit.createInventory(null, 18, "§f§3Bogen§f");
-		ShopManager.Chest = Bukkit.createInventory(null, 18, "§f§3Kisten§f");
-		ShopManager.EssenInv = Bukkit.createInventory(null, 18, "§f§3Essen§f");
-		ShopManager.Spezial = Bukkit.createInventory(null, 18, "§f§3Spezial§f");
-		ShopManager.SPitzhacken = Bukkit.createInventory(null, 18, "§f§3Spitzhacken§f");
-		ShopManager.Traenke = Bukkit.createInventory(null, 18, "§f§aTraenke§f");
-		ShopManager.WaffenInv = Bukkit.createInventory(null, 18, "§f§3Waffen§f");
-		ShopManager.BloeckeInv = Bukkit.createInventory(null, 18, "§f§3Bloecke§f");
-		ShopManager.RuestungInv = Bukkit.createInventory(null, 18, "§f§3Ruestung§f");
+		ShopManager.BogenInv = Bukkit.createInventory(null, 18, "§f【§3Bögen§f】");
+		ShopManager.Chest = Bukkit.createInventory(null, 18, "§f【§3Kisten§f】");
+		ShopManager.EssenInv = Bukkit.createInventory(null, 18, "§f【§3Essen§f】");
+		ShopManager.Spezial = Bukkit.createInventory(null, 18, "§f【§3Spezial - 1§f】");
+		ShopManager.SPitzhacken = Bukkit.createInventory(null, 18, "§f【§3Spitzhacken§f】");
+		ShopManager.Tränke = Bukkit.createInventory(null, 18, "§f【§aTränke§f】");
+		ShopManager.WaffenInv = Bukkit.createInventory(null, 18, "§f【§3Waffen§f】");
+		ShopManager.BlöckeInv = Bukkit.createInventory(null, 18, "§f【§3Blöcke§f】");
+		ShopManager.RüstungInv = Bukkit.createInventory(null, 18, "§f【§3Rüstung§f】");
 		GameManager.setState(GameManager.LOBBY);
 		Bukkit.getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
 		ConnectToMYSQL();
@@ -133,10 +133,10 @@ public class Bedwars extends JavaPlugin{
 		FileConfiguration cfg = this.getConfig();
 		
 		cfg.options().copyDefaults(true);
-		cfg.addDefault("MySQL.Host", "CookieHost");
-		cfg.addDefault("MySQL.User", "CookieBenutzer");
-		cfg.addDefault("MySQL.PW", "CookiePW");
-		cfg.addDefault("MySQL.Database", "CookieBase");
+		cfg.addDefault("MySQL.Host", "");
+		cfg.addDefault("MySQL.User", "");
+		cfg.addDefault("MySQL.PW", "");
+		cfg.addDefault("MySQL.Database", "");
 		cfg.addDefault("World", "respawn");
 		saveConfig();
 		
@@ -144,7 +144,7 @@ public class Bedwars extends JavaPlugin{
 	
 	public void ConnectToMYSQL(){
 		mysql = new MySQL(this.getConfig().getString("MySQL.Host"), this.getConfig().getString("MySQL.Database"), this.getConfig().getString("MySQL.User"), this.getConfig().getString("MySQL.PW"));
-		mysql.update("CREATE TABLE IF NOT EXISTS BedWarsStats(UUID varchar(64), Played int, Wins int, Points int, Kills int, Deaths int, zB int);");
+		MySQL.update("CREATE TABLE IF NOT EXISTS BedWarsStats(UUID varchar(64), Played int, Wins int, Points int, Kills int, Deaths int, zB int);");
 	}
 	
 	

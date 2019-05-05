@@ -9,10 +9,7 @@ import de.bedwars.main.Bedwars;
 
 
 
-
-
-
-
+	
 
 public class LocationApi{
 
@@ -34,8 +31,8 @@ public class LocationApi{
 		double x = pl.getConfig().getDouble(LocationName+".X");
 		double y = pl.getConfig().getDouble(LocationName+".Y");
 		double z = pl.getConfig().getDouble(LocationName+".Z");
-		double yaw = pl.getConfig().getDouble(LocationName+".Yaw");
-		double pitch = pl.getConfig().getDouble(LocationName+".Pitch");
+		pl.getConfig().getDouble(LocationName+".Yaw");
+		pl.getConfig().getDouble(LocationName+".Pitch");
 		String World = pl.getConfig().getString(LocationName+".World");
 		World w = Bukkit.getWorld(World);
 		Location l = new Location(w,x,y,z);

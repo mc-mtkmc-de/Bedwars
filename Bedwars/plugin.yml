@@ -1,9 +1,12 @@
 name: Bedwars
-version 1.0
+version: 1.0
 author: Tempoo50
 main: de.bedwars.main.Bedwars
 
 commands:
    Spawner:
-   Bedwars:
+      description:
+   BW:
+      description:
    setranking:
+      description:

@@ -14,12 +14,12 @@ public class ShopManager {
 	public static Inventory MainInv;
 	public static Inventory WaffenInv;
 	public static Inventory BogenInv;
-	public static Inventory BloeckeInv;
+	public static Inventory BlÃ¶ckeInv;
 	public static Inventory SPitzhacken;
-	public static Inventory Traenke;
+	public static Inventory TrÃ¤nke;
 	public static Inventory Spezial;
 	public static Inventory EssenInv;
-	public static Inventory RuestungInv;
+	public static Inventory RÃ¼stungInv;
 	public static Inventory Chest;
 	
 	
@@ -28,28 +28,28 @@ public class ShopManager {
 		
 		Inventory inv = MainInv;
 		
-		inv.setItem(0, ItemCreator.CreateItemwithMaterial(Material.HARD_CLAY, 0, 1, "§6> Bloecke", null));
-		inv.setItem(10, ItemCreator.CreateItemwithMaterial(Material.IRON_PICKAXE, 0, 1, "§5> Spitzhacken", null));
-		inv.setItem(2, ItemCreator.CreateItemwithMaterial(Material.DIAMOND_SWORD, 0, 1, "§3> Waffen", null));
-		inv.setItem(12, ItemCreator.CreateItemwithMaterial(Material.BOW, 0, 1, "§9> Boegen", null));
-		inv.setItem(4, ItemCreator.CreateItemwithMaterial(Material.CHAINMAIL_CHESTPLATE, 0, 1, "§8> Ruestung", null));
-		inv.setItem(13, ItemCreator.CreateItemwithID(373, 8235, 1,"§a> Traenke" , null));
-		inv.setItem(8, ItemCreator.CreateItemwithMaterial(Material.CHEST, 0, 1, "§2> Kisten", null));
-		inv.setItem(15, ItemCreator.CreateItemwithMaterial(Material.FIREWORK, 0, 1, "§3§k:: §fSpezial §3§k::", null));
+		inv.setItem(0, ItemCreator.CreateItemwithMaterial(Material.HARD_CLAY, 0, 1, "Â§6> BlÃ¶cke", null));
+		inv.setItem(10, ItemCreator.CreateItemwithMaterial(Material.IRON_PICKAXE, 0, 1, "Â§5> Spitzhacken", null));
+		inv.setItem(2, ItemCreator.CreateItemwithMaterial(Material.DIAMOND_SWORD, 0, 1, "Â§3> Waffen", null));
+		inv.setItem(12, ItemCreator.CreateItemwithMaterial(Material.BOW, 0, 1, "Â§9> BÃ¶gen", null));
+		inv.setItem(4, ItemCreator.CreateItemwithMaterial(Material.CHAINMAIL_CHESTPLATE, 0, 1, "Â§8> RÃ¼stung", null));
+		inv.setItem(13, ItemCreator.CreateItemwithID(373, 8235, 1,"Â§a> TrÃ¤nke" , null));
+		inv.setItem(8, ItemCreator.CreateItemwithMaterial(Material.CHEST, 0, 1, "Â§2> Kisten", null));
+		inv.setItem(15, ItemCreator.CreateItemwithMaterial(Material.FIREWORK, 0, 1, "Â§3Â§k:: Â§fSpezial Â§3Â§k::", null));
 
 		
 		p.openInventory(inv);
 	}
 	
-	public static void openBloecke(Player p){
+	public static void openBlÃ¶cke(Player p){
 		
-		Inventory inv = BloeckeInv;
+		Inventory inv = BlÃ¶ckeInv;
 		
-		inv.setItem(0, ItemCreator.CreateItemwithMaterial(Material.HARD_CLAY, 0, 1, "§6> Harter Clay", null));
-		inv.setItem(2, ItemCreator.CreateItemwithMaterial(Material.ENDER_STONE, 0, 1, "§5> Endstein", null));
-		inv.setItem(4, ItemCreator.CreateItemwithMaterial(Material.GLASS, 0, 1, "§3> Glass", null));
-		inv.setItem(6, ItemCreator.CreateItemwithMaterial(Material.GLOWSTONE, 0, 1, "§9> Glowstone", null));
-		inv.setItem(8, ItemCreator.CreateItemwithMaterial(Material.IRON_BLOCK, 0, 1, "§8> Eisenblock", null));
+		inv.setItem(0, ItemCreator.CreateItemwithMaterial(Material.HARD_CLAY, 0, 1, "Â§6> Harter Clay", null));
+		inv.setItem(2, ItemCreator.CreateItemwithMaterial(Material.ENDER_STONE, 0, 1, "Â§5> Endstein", null));
+		inv.setItem(4, ItemCreator.CreateItemwithMaterial(Material.GLASS, 0, 1, "Â§3> Glass", null));
+		inv.setItem(6, ItemCreator.CreateItemwithMaterial(Material.GLOWSTONE, 0, 1, "Â§9> Glowstone", null));
+		inv.setItem(8, ItemCreator.CreateItemwithMaterial(Material.IRON_BLOCK, 0, 1, "Â§8> Eisenblock", null));
 
 
 		
@@ -61,9 +61,9 @@ public class ShopManager {
 		
 		Inventory inv = SPitzhacken;
 		
-		inv.setItem(2, ItemCreator.CreateItemwithMaterial(Material.WOOD_PICKAXE, 0, 1, "§6> Holzspitzhacke", null));
-		inv.setItem(4, ItemCreator.CreateItemwithMaterial(Material.STONE_PICKAXE, 0, 1, "§5> Steinspitzhacke", null));
-		inv.setItem(6, ItemCreator.CreateItemwithMaterial(Material.IRON_PICKAXE, 0, 1, "§3> Eisenspitzhacke", null));
+		inv.setItem(2, ItemCreator.CreateItemwithMaterial(Material.WOOD_PICKAXE, 0, 1, "Â§6> Holzspitzhacke", null));
+		inv.setItem(4, ItemCreator.CreateItemwithMaterial(Material.STONE_PICKAXE, 0, 1, "Â§5> Steinspitzhacke", null));
+		inv.setItem(6, ItemCreator.CreateItemwithMaterial(Material.IRON_PICKAXE, 0, 1, "Â§3> Eisenspitzhacke", null));
 
 
 
@@ -74,10 +74,10 @@ public class ShopManager {
 		
 		Inventory inv = WaffenInv;
 		
-		inv.setItem(1, ItemCreator.CreateItemwithMaterial(Material.STICK, 0, 1, "§6> KnockbackStick", null));
-		inv.setItem(3, ItemCreator.CreateItemwithMaterial(Material.GOLD_SWORD, 0, 1, "§5> Schwert Lvl.1", null));
-		inv.setItem(5, ItemCreator.CreateItemwithMaterial(Material.GOLD_SWORD, 0, 1, "§3> Schwert Lvl.2", null));
-		inv.setItem(7, ItemCreator.CreateItemwithMaterial(Material.IRON_SWORD, 0, 1, "§3> Schwert Lvl.3", null));
+		inv.setItem(1, ItemCreator.CreateItemwithMaterial(Material.STICK, 0, 1, "Â§6> KnockbackStick", null));
+		inv.setItem(3, ItemCreator.CreateItemwithMaterial(Material.GOLD_SWORD, 0, 1, "Â§5> Schwert Lvl.1", null));
+		inv.setItem(5, ItemCreator.CreateItemwithMaterial(Material.GOLD_SWORD, 0, 1, "Â§3> Schwert Lvl.2", null));
+		inv.setItem(7, ItemCreator.CreateItemwithMaterial(Material.IRON_SWORD, 0, 1, "Â§3> Schwert Lvl.3", null));
 
 
 		p.openInventory(inv);
@@ -90,14 +90,14 @@ public class ShopManager {
 		ItemStack Bogen1 = new ItemStack(Material.BOW);
 		Bogen1.addUnsafeEnchantment(Enchantment.ARROW_INFINITE, 1);
 		ItemMeta bm1 = Bogen1.getItemMeta();
-		bm1.setDisplayName("§3> Bogen Lvl.1");
+		bm1.setDisplayName("Â§3> Bogen Lvl.1");
 		Bogen1.setItemMeta(bm1);
 		
 		ItemStack Bogen11 = new ItemStack(Material.BOW);
 		Bogen11.addUnsafeEnchantment(Enchantment.ARROW_INFINITE, 1);
 		Bogen11.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE, 1);
 		ItemMeta bm11 = Bogen11.getItemMeta();
-		bm11.setDisplayName("§3> Bogen Lvl.2");
+		bm11.setDisplayName("Â§3> Bogen Lvl.2");
 		Bogen11.setItemMeta(bm11);
 		
 		ItemStack Bogen111 = new ItemStack(Material.BOW);
@@ -106,12 +106,12 @@ public class ShopManager {
 		Bogen111.addUnsafeEnchantment(Enchantment.ARROW_KNOCKBACK, 1);
 
 		ItemMeta bm111 = Bogen111.getItemMeta();
-		bm111.setDisplayName("§3> Bogen Lvl.3");
+		bm111.setDisplayName("Â§3> Bogen Lvl.3");
 		Bogen111.setItemMeta(bm111);
 		
 		ItemStack A = new ItemStack(Material.ARROW);
 		ItemMeta am = A.getItemMeta();
-		am.setDisplayName("§3> Pfeil");
+		am.setDisplayName("Â§3> Pfeil");
 		A.setItemMeta(am);
 		
 
@@ -127,31 +127,31 @@ public class ShopManager {
 		p.openInventory(inv);
 	}
 	
-	public static void openRuestung(Player p){
+	public static void openRÃ¼stung(Player p){
 		
 		
-		Inventory inv = RuestungInv;
+		Inventory inv = RÃ¼stungInv;
 		
 		ItemStack Bogen1 = new ItemStack(Material.LEATHER_LEGGINGS);
 		ItemMeta bm1 = Bogen1.getItemMeta();
-		bm1.setDisplayName("§bLeder-Hose");
+		bm1.setDisplayName("Â§bã€”Leder-Hoseã€•");
 		Bogen1.setItemMeta(bm1);
 		
 		ItemStack Bogen11 = new ItemStack(Material.LEATHER_BOOTS);
 		ItemMeta bm11 = Bogen11.getItemMeta();
-		bm11.setDisplayName("§bLeder-Schuhe");
+		bm11.setDisplayName("Â§bã€”Leder-Schuheã€•");
 		Bogen11.setItemMeta(bm11);
 		
 		ItemStack Bogen111 = new ItemStack(Material.LEATHER_HELMET);
 		ItemMeta bm111 = Bogen111.getItemMeta();
-		bm111.setDisplayName("§bLeder-Helm");
+		bm111.setDisplayName("Â§bã€”Leder-Helmã€•");
 		Bogen111.setItemMeta(bm111);
 		
 		ItemStack Bogen1111 = new ItemStack(Material.CHAINMAIL_CHESTPLATE);
 		Bogen1111.addUnsafeEnchantment(Enchantment.DURABILITY, 30);
 		Bogen1111.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1);
 		ItemMeta bm1111 = Bogen1111.getItemMeta();
-		bm1111.setDisplayName("§bBrustPanzer Lvl.1");
+		bm1111.setDisplayName("Â§bã€”BrustPanzer Lvl.1ã€•");
 
 		Bogen1111.setItemMeta(bm1111);
 		ItemStack Bogen11111 = new ItemStack(Material.CHAINMAIL_CHESTPLATE);
@@ -160,14 +160,14 @@ public class ShopManager {
 		Bogen11111.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 1);
 
 		ItemMeta bm11111 = Bogen11111.getItemMeta();
-		bm11111.setDisplayName("§bBrustPanzer Lvl.2");
+		bm11111.setDisplayName("Â§bã€”BrustPanzer Lvl.2ã€•");
 		Bogen11111.setItemMeta(bm11111);
 		ItemStack Bogen111111 = new ItemStack(Material.CHAINMAIL_CHESTPLATE);
 		Bogen111111.addUnsafeEnchantment(Enchantment.DURABILITY, 30);
 		Bogen111111.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 2);
 		Bogen111111.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 1);
 		ItemMeta bm111111 = Bogen111111.getItemMeta();
-		bm111111.setDisplayName("§bBrustPanzer Lvl.3");
+		bm111111.setDisplayName("Â§bã€”BrustPanzer Lvl.3ã€•");
 		Bogen111111.setItemMeta(bm111111);
 		
 
@@ -192,31 +192,31 @@ public class ShopManager {
 		p.openInventory(inv);
 	}
 	
-	public static void openTraenke(Player p){
+	public static void openTrÃ¤nke(Player p){
 		
 		
 		ItemStack Bogen1 = new ItemStack(373,1,(short)8261);
 		ItemMeta bm1 = Bogen1.getItemMeta();
-		bm1.setDisplayName("§bHeil-Trank");
+		bm1.setDisplayName("Â§bã€”Heil-Trankã€•");
 		Bogen1.setItemMeta(bm1);
 		
 		ItemStack Bogen11 = new ItemStack(373,1,(short)8257);
 		ItemMeta bm11 = Bogen11.getItemMeta();
-		bm11.setDisplayName("§bRegenerations-Trank");
+		bm11.setDisplayName("Â§bã€”Regenerations-Trankã€•");
 		Bogen11.setItemMeta(bm11);
 		
 		ItemStack Bogen111 = new ItemStack(373,1,(short)8194);
 		ItemMeta bm111 = Bogen111.getItemMeta();
-		bm111.setDisplayName("§bSchnelligkeits-Trank");
+		bm111.setDisplayName("Â§bã€”Schnelligkeits-Trankã€•");
 		Bogen111.setItemMeta(bm111);
 		
 		ItemStack Bogen1111 = new ItemStack(373,1,(short)8201);
 		ItemMeta bm1111 = Bogen1111.getItemMeta();
-		bm1111.setDisplayName("§bStaerke-Trank");
+		bm1111.setDisplayName("Â§bã€”StÃ¤rke-Trankã€•");
 		Bogen1111.setItemMeta(bm1111);
 		ItemStack Bogen11111 = new ItemStack(373,1,(short)8235);
 		ItemMeta bm11111 = Bogen11111.getItemMeta();
-		bm11111.setDisplayName("§bJump-Trank");
+		bm11111.setDisplayName("Â§bã€”Jump-Trankã€•");
 		Bogen11111.setItemMeta(bm11111);
 
 		
@@ -224,11 +224,11 @@ public class ShopManager {
 		
 
 		
-		Inventory inv = Traenke;
+		Inventory inv = TrÃ¤nke;
 		ItemStack i = new ItemStack(Material.REDSTONE_BLOCK);
 		ItemMeta im = i.getItemMeta();
 		
-		im.setDisplayName("§3§k §4Zurueck §3§k");
+		im.setDisplayName("Â§3Â§k> Â§4ZurÃ¼ck Â§3Â§k<");
 		
 		i.setItemMeta(im);
 		inv.setItem(13, i);
@@ -245,14 +245,14 @@ public class ShopManager {
 
 				
 					
-		p.openInventory(Traenke);
+		p.openInventory(TrÃ¤nke);
 	}
 	public static void openChest(Player p){
 		
 		Inventory inv = Chest;
 		
-		inv.setItem(3, ItemCreator.CreateItemwithMaterial(Material.CHEST, 0, 1, "§6> Kiste", null));
-		inv.setItem(6, ItemCreator.CreateItemwithMaterial(Material.ENDER_CHEST, 0, 1, "§5> TeamKiste", null));
+		inv.setItem(3, ItemCreator.CreateItemwithMaterial(Material.CHEST, 0, 1, "Â§6> Kiste", null));
+		inv.setItem(6, ItemCreator.CreateItemwithMaterial(Material.ENDER_CHEST, 0, 1, "Â§5> TeamKiste", null));
 
 
 
@@ -265,9 +265,9 @@ public class ShopManager {
 		Inventory inv = EssenInv;
 		//ArrayList<String> InfosZumItem = new ArrayList<>();
 		//InfosZumItem.add("Â§9FÃ¼r dieses Item brauchst du 1 Bronze! | Dieser Goldene Apfel kostet 1 Gold");
-		inv.setItem(2, ItemCreator.CreateItemwithMaterial(Material.COOKIE, 0, 1, "§6> Cookie", null));
-		inv.setItem(4, ItemCreator.CreateItemwithMaterial(Material.COOKED_BEEF, 0, 1, "§5> Steak", null));
-		inv.setItem(6, ItemCreator.CreateItemwithMaterial(Material.GOLDEN_APPLE, 0, 1, "§6> Goldener Apfel", null));
+		inv.setItem(2, ItemCreator.CreateItemwithMaterial(Material.COOKIE, 0, 1, "Â§6> Cookie", null));
+		inv.setItem(4, ItemCreator.CreateItemwithMaterial(Material.COOKED_BEEF, 0, 1, "Â§5> Steak", null));
+		inv.setItem(6, ItemCreator.CreateItemwithMaterial(Material.GOLDEN_APPLE, 0, 1, "Â§6> Goldener Apfel", null));
 
 
 		

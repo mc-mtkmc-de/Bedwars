@@ -11,7 +11,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import de.bedwars.api.ItemCreator;
 import de.bedwars.main.Bedwars;
-import de.bedwars.shop.ShopManager;
 
 
 public class ShopInteract implements Listener {
@@ -22,7 +21,7 @@ public class ShopInteract implements Listener {
 	public void onInteractinInv(InventoryClickEvent e){
 		try{
 			Player p = (Player) e.getWhoClicked();
-			if(e.getInventory() == ShopManager.BloeckeInv || e.getInventory() == ShopManager.BogenInv ||e.getInventory() == ShopManager.Chest ||e.getInventory() == ShopManager.EssenInv ||e.getInventory() == ShopManager.MainInv ||e.getInventory() == ShopManager.RuestungInv ||e.getInventory() == ShopManager.Spezial ||e.getInventory() == ShopManager.SPitzhacken ||e.getInventory() == ShopManager.Traenke ||e.getInventory() == ShopManager.WaffenInv){
+			if(e.getInventory() == ShopManager.BlöckeInv || e.getInventory() == ShopManager.BogenInv ||e.getInventory() == ShopManager.Chest ||e.getInventory() == ShopManager.EssenInv ||e.getInventory() == ShopManager.MainInv ||e.getInventory() == ShopManager.RüstungInv ||e.getInventory() == ShopManager.Spezial ||e.getInventory() == ShopManager.SPitzhacken ||e.getInventory() == ShopManager.Tränke ||e.getInventory() == ShopManager.WaffenInv){
 				
 				
 				
@@ -30,18 +29,18 @@ public class ShopInteract implements Listener {
 				if(e.getInventory() == ShopManager.MainInv){
 					//Wenn es nicht klappt:
 					//if(e.getCurrentItem().getType() == Material.HARD_CLAY) // blabal
-					if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6> Bloecke")){
-						ShopManager.openBloecke(p);
+					if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6> Blöcke")){
+						ShopManager.openBlöcke(p);
 					}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§5> Spitzhacken")){
 						ShopManager.openPickaxe(p);
 					}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§3> Waffen")){
 						ShopManager.openWaffe(p);
-					}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§9> Boegen")){
+					}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§9> Bögen")){
 						ShopManager.openBogen(p);
-					}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§8> Ruestung")){
-						ShopManager.openRuestung(p);
-					}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§a> Traenke")){
-						ShopManager.openTraenke(p);
+					}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§8> Rüstung")){
+						ShopManager.openRüstung(p);
+					}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§a> Tränke")){
+						ShopManager.openTränke(p);
 					}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§2> Kisten")){
 						ShopManager.openChest(p);
 					}else if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§3§k:: §fSpezial §3§k::")){
@@ -50,7 +49,7 @@ public class ShopInteract implements Listener {
 						
 					}
 					
-				}else if(e.getInventory() == ShopManager.BloeckeInv){
+				}else if(e.getInventory() == ShopManager.BlöckeInv){
 					
 					if(e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6> Harter Clay")){
 						e.setCancelled(true);

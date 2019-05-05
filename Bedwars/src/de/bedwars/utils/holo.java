@@ -36,7 +36,7 @@ public class holo {
 			e.setCustomName(text);
 			e.setCustomNameVisible(true);
 			e.setInvisible(true);
-			e.setGravity(true);
+			e.setNoGravity(true);
 			List.add(e);
 			count++;
 			this.loc.subtract(0, this.distance,0);

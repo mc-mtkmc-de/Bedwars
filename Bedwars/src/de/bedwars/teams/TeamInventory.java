@@ -17,7 +17,7 @@ public class TeamInventory implements Listener{
 
 public static void openInventory(Player p){
 		
-		Inventory inv = Bukkit.createInventory(null, 9, "§3Waehle dein §fTeam:");
+		Inventory inv = Bukkit.createInventory(null, 9, "Â§3WÃ¤hle dein Â§fTeam:");
 		
 		ArrayList<String> blau = new ArrayList<>();
 		ArrayList<String> gelb = new ArrayList<>();
@@ -33,27 +33,27 @@ public static void openInventory(Player p){
 		
 	for(String s : Bedwars.gelb){
 			
-		gelb.add("§7§e "+s);
+		gelb.add("Â§7âž¥Â§e "+s);
 			
 		}
 	
 	for(String s : Bedwars.rot){
 		
-		rot.add("§7§4 "+s);
+		rot.add("Â§7âž¥Â§4 "+s);
 		
 	}
 	
 	for(String s : Bedwars.Lila){
 		
-		lila.add("§7§5 "+s);
+		lila.add("Â§7âž¥Â§5 "+s);
 		
 	}
 		
 		
-		inv.setItem(1, ItemCreator.CreateItemwithMaterial(Material.WOOL, 11, 1,"§9Blaues Team", blau));
-		inv.setItem(3, ItemCreator.CreateItemwithMaterial(Material.WOOL, 14, 1,"§4Rotes Team", rot));
-		inv.setItem(5, ItemCreator.CreateItemwithMaterial(Material.WOOL, 4, 1,"§eGelbes Team", gelb));
-		inv.setItem(7, ItemCreator.CreateItemwithMaterial(Material.WOOL, 10, 1,"§5Lilanes Team", lila));
+		inv.setItem(1, ItemCreator.CreateItemwithMaterial(Material.WOOL, 11, 1,"Â§9Blaues Team", blau));
+		inv.setItem(3, ItemCreator.CreateItemwithMaterial(Material.WOOL, 14, 1,"Â§4Rotes Team", rot));
+		inv.setItem(5, ItemCreator.CreateItemwithMaterial(Material.WOOL, 4, 1,"Â§eGelbes Team", gelb));
+		inv.setItem(7, ItemCreator.CreateItemwithMaterial(Material.WOOL, 10, 1,"Â§5Lilanes Team", lila));
 		
 		p.openInventory(inv);
 		

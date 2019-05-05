@@ -57,16 +57,16 @@ public class Methods {
 		String s;
 		
 		if(Bedwars.blau.contains(p.getName())){
-			s="�7�9Blau";
+			s="§7➥ §9Blau";
 		}else if(Bedwars.rot.contains(p.getName())){
-			s="�7�4Rot";
+			s="§7➥ §4Rot";
 		}else if(Bedwars.gelb.contains(p.getName())){
 			s="§7➥ §eGelb";
 		}else if(Bedwars.Lila.contains(p.getName())){
-			s="�7�5Lila";
+			s="§7➥ §5Lila";
 		}else{
 			
-			s="�7�cKein Team";
+			s="§7➥ §cKein Team";
 			
 		}
 		
@@ -92,16 +92,16 @@ public class Methods {
 		Location Villagergelb = LocationApi.getLocation("Villager.gelb");
 		Location Villagerlila = LocationApi.getLocation("Villager.lila");
 		String path = pl.getConfig().getString("World");
-		Villager v1 = (Villager) Bukkit.getWorld(path).spawnCreature(Villagerblau, EntityType.VILLAGER);
+		Villager v1 = (Villager) Bukkit.getWorld(path).spawnEntity(Villagerblau, EntityType.VILLAGER);
 		v1.setCustomName("§3Shop");
 		v1.setCustomNameVisible(true);
-		Villager v11 = (Villager) Bukkit.getWorld(path).spawnCreature(Villagerrot, EntityType.VILLAGER);
+		Villager v11 = (Villager) Bukkit.getWorld(path).spawnEntity(Villagerrot, EntityType.VILLAGER);
 		v11.setCustomName("§3Shop");
 		v11.setCustomNameVisible(true);
-		Villager v111 = (Villager) Bukkit.getWorld(path).spawnCreature(Villagergelb, EntityType.VILLAGER);
+		Villager v111 = (Villager) Bukkit.getWorld(path).spawnEntity(Villagergelb, EntityType.VILLAGER);
 		v111.setCustomName("§3Shop");
 		v111.setCustomNameVisible(true);
-		Villager v1111 = (Villager) Bukkit.getWorld(path).spawnCreature(Villagerlila, EntityType.VILLAGER);
+		Villager v1111 = (Villager) Bukkit.getWorld(path).spawnEntity(Villagerlila, EntityType.VILLAGER);
 		v1111.setCustomName("§3Shop");
 		v1111.setCustomNameVisible(true);
 

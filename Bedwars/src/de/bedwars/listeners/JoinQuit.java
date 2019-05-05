@@ -2,7 +2,6 @@ package de.bedwars.listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -11,14 +10,14 @@ import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.event.player.PlayerLoginEvent.Result;
 import org.bukkit.event.player.PlayerQuitEvent;
 
+import de.bedwars.utils.GameManager;
 import de.bedwars.utils.Methods;
 import de.bedwars.utils.holo;
 import de.bedwars.api.ItemCreator;
 import de.bedwars.api.LocationApi;
+import de.bedwars.api.TablistAPI;
 import de.bedwars.main.Bedwars;
 import de.bedwars.mysql.SQLStats;
-import de.bedwars.api.TablistAPI;
-import de.bedwars.utils.GameManager;
 
 
 public class JoinQuit implements Listener{
@@ -81,13 +80,13 @@ public class JoinQuit implements Listener{
 		
 	}
 	public void trySettingWinner(){
-		if(pl.rot.size() == 0 && pl.gelb.size() == 0 && pl.Lila.size() == 0&& pl.blau.size() >=1){
+		if(Bedwars.rot.size() == 0 && Bedwars.gelb.size() == 0 && Bedwars.Lila.size() == 0&& Bedwars.blau.size() >=1){
 			for(Player p2: Bukkit.getOnlinePlayers() ){					p2.setHealth(20.0);
 				p2.teleport(LocationApi.getLocation("Lobby"));
 				GameManager.setState(GameManager.Restart);
 			}
 		
-			Bukkit.broadcastMessage(pl.pr+"Team§9§l Blau "+pl.n+"hat gewonnen");
+			Bukkit.broadcastMessage(Bedwars.pr+"Team§9§l Blau "+Bedwars.n+"hat gewonnen");
 			for(String winner : Bedwars.blau){
 				Player winner2 = Bukkit.getPlayer(winner);
 			
@@ -95,7 +94,7 @@ public class JoinQuit implements Listener{
 			}
 				return;
 		}else
-			if(pl.blau.size() == 0 && pl.gelb.size() == 0 && pl.Lila.size() == 0&& pl.rot.size() >=1){
+			if(Bedwars.blau.size() == 0 && Bedwars.gelb.size() == 0 && Bedwars.Lila.size() == 0&& Bedwars.rot.size() >=1){
 				for(Player p2: Bukkit.getOnlinePlayers() ){					p2.setHealth(20.0);
 					p2.teleport(LocationApi.getLocation("Lobby"));
 					GameManager.setState(GameManager.Restart);
@@ -105,11 +104,11 @@ public class JoinQuit implements Listener{
 				
 				SQLStats.addWins(winner2.getUniqueId().toString(), 1);
 				}
-				Bukkit.broadcastMessage(pl.pr+"Team§4§l Rot "+pl.n+"hat gewonnen");
+				Bukkit.broadcastMessage(Bedwars.pr+"Team§4§l Rot "+Bedwars.n+"hat gewonnen");
 					return;
 			}else
 		
-				if(pl.rot.size() == 0 && pl.blau.size() == 0 && pl.Lila.size() == 0&& pl.gelb.size() >=1){
+				if(Bedwars.rot.size() == 0 && Bedwars.blau.size() == 0 && Bedwars.Lila.size() == 0&& Bedwars.gelb.size() >=1){
 					for(Player p2: Bukkit.getOnlinePlayers() ){					p2.setHealth(20.0);
 						p2.teleport(LocationApi.getLocation("Lobby"));
 						GameManager.setState(GameManager.Restart);
@@ -119,12 +118,12 @@ public class JoinQuit implements Listener{
 					
 					SQLStats.addWins(winner2.getUniqueId().toString(), 1);
 					}
-					Bukkit.broadcastMessage(pl.pr+"Team§e§l Gelb "+pl.n+"hat gewonnen");
+					Bukkit.broadcastMessage(Bedwars.pr+"Team§e§l Gelb "+Bedwars.n+"hat gewonnen");
 						return;
 				}else
 		
 		
-					if(pl.rot.size() == 0 && pl.gelb.size() == 0 && pl.blau.size() == 0&& pl.Lila.size() >=1){
+					if(Bedwars.rot.size() == 0 && Bedwars.gelb.size() == 0 && Bedwars.blau.size() == 0&& Bedwars.Lila.size() >=1){
 						for(Player p2: Bukkit.getOnlinePlayers() ){					p2.setHealth(20.0);
 							p2.teleport(LocationApi.getLocation("Lobby"));
 							GameManager.setState(GameManager.Restart);
@@ -134,7 +133,7 @@ public class JoinQuit implements Listener{
 						
 						SQLStats.addWins(winner2.getUniqueId().toString(), 1);
 						}
-						Bukkit.broadcastMessage(pl.pr+"Team§5§l Lila "+pl.n+"hat gewonnen");
+						Bukkit.broadcastMessage(Bedwars.pr+"Team§5§l Lila "+Bedwars.n+"hat gewonnen");
 							return;
 					}
 	}

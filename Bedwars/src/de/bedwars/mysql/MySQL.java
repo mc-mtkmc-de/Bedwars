@@ -6,11 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.mysql.jdbc.PreparedStatement;
-
 public class MySQL {
 
-
+	
 	private static String HOST = "";
 	private static String DATABASE = "";
 	private static String USER = "";
@@ -19,10 +17,11 @@ public class MySQL {
 	private static Connection con;
 	
 	public MySQL(String host, String database, String user, String password) {
-		this.HOST = host;
-		this.DATABASE = database;
-		this.USER = user;
-		this.PASSWORD = password;
+		
+		MySQL.HOST = host;
+		MySQL.DATABASE = database;
+		MySQL.USER = user;
+		MySQL.PASSWORD = password;
 		
 		connect();
 	}
